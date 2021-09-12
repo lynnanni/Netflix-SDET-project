@@ -148,7 +148,7 @@ class TestCRUD:
         assert formatted_discontinued_date == formatted_yesterday
         assert search_data["company"] == company
 
-    ### DELETE ###
+### DELETE ###
     @pytest.mark.skipif("TestCRUD.creation_failure")
     def test_delete_existing_computer(self):
         """
