@@ -1,0 +1,39 @@
+/Users/anniwang/PycharmProjects/anni_netflix_project/venv/bin/python "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pycharm/_jb_pytest_runner.py" --path /Users/anniwang/PycharmProjects/anni_netflix_project/Testcases/CRUD.py
+Testing started at 1:38 PM ...
+Launching pytest with arguments /Users/anniwang/PycharmProjects/anni_netflix_project/Testcases/CRUD.py in /Users/anniwang/PycharmProjects/anni_netflix_project/Testcases
+
+============================= test session starts ==============================
+platform darwin -- Python 3.7.6, pytest-5.2.1, py-1.10.0, pluggy-0.13.1 -- /Users/anniwang/PycharmProjects/anni_netflix_project/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/anniwang/PycharmProjects/anni_netflix_project, inifile: pytest.ini
+collecting ... collected 7 items
+
+CRUD.py::TestCRUD::test_create_computer_happy_path 
+CRUD.py::TestCRUD::test_cancel_create_computer 
+CRUD.py::TestCRUD::test_search_for_created_computer_full_name 
+CRUD.py::TestCRUD::test_search_for_created_computers_partial_name 
+CRUD.py::TestCRUD::test_search_for_nonexistent_name 
+CRUD.py::TestCRUD::test_edit_computer_fields 
+CRUD.py::TestCRUD::test_delete_existing_computer 
+
+============================== 7 passed in 7.37s ===============================
+
+Process finished with exit code 0
+INFO:root:Creating Chrome Browser Driver
+INFO:root:Creating Pages
+PASSED                [ 14%]INFO:root:Opening page: http://computer-database.herokuapp.com/computers
+INFO:root:Original computer count: 621
+INFO:root:Creating computer with params: name=GYEZAW, introduced_date=2021-09-11, discontinued_date=2021-09-12, company=RCA
+INFO:root:New computer count: 622
+PASSED                    [ 28%]INFO:root:Opening page: http://computer-database.herokuapp.com/computers
+INFO:root:New computer should not be created since cancel button is pressed
+INFO:root:Creating computer with params: name=cancel, introduced_date=None, discontinued_date=None, company=None
+PASSED     [ 42%]INFO:root:Searching for computer: GYEZAW
+INFO:root:Grabbed search result: {'href': 'http://computer-database.herokuapp.com/computers/635', 'name': 'GYEZAW', 'introduced_date': '11 Sep 2021', 'discontinued_date': '12 Sep 2021', 'company': 'RCA'}
+PASSED [ 57%]INFO:root:Searching for computer with terms: AS
+PASSED               [ 71%]INFO:root:Searching for computer with terms: 123asdfj3i23838383sdjdjdjdj333
+PASSED                      [ 85%]INFO:root:Editing computer with params: name=GYEZAW_edited, introduced_date=2021-09-07, discontinued_date=2021-09-11, company=OQO
+INFO:root:Verify the fields are updated by searching for the edited name: GYEZAW_edited
+PASSED                  [100%]INFO:root:Deleting computer GYEZAW_edited
+INFO:root:Searching for computer to verify it does not appear as a result
+
