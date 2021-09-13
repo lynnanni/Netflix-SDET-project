@@ -1,7 +1,7 @@
 # Readme
 
 ## Project Description:
-This project automates some of the test cases written in Anni-NetflixTestPlan.numbers 
+This project automates some of the test cases written in Anni-NetflixTestPlan.numbers using Pytest and Selenium. 
 
 ## Tests Automated:
 - Add a new computer - happy path
@@ -20,23 +20,34 @@ This project automates some of the test cases written in Anni-NetflixTestPlan.nu
 - Frontend.py instantiates the web browser as well as creating pages to take actions on.
 - Locators.py contains xpaths and ids used by Selenium to find objects to interact with, such as buttons to click or textboxes to type in.
 - Modules/Pages contains the "Page Object Model" pages that represent different user interfaces.
+- To see sample test results, please view `sample-run-output.txt` and `pytest_run_example.png` 
 
 
 ## Test Setup:
-To run the tests from the CLI: `pytest -v Testcases/CRUD.py`
 
-Or, import the project into an IDE such as Pycharm and edit the run configuration to select Python tests. Finally, select the test you would like to run based off the script path. 
+### Assumptions:
+- User is running the tests on a Mac-like system
+- Python 3.6 or later is installed.
+- Chrome is installed
 
-Example: `/Users/anniwang/PycharmProjects/anni_netflix_project/Testcases/CRUD.py`
+### Steps:
+First, install requirements.txt:
 
-NOTE: Please have Chrome installed for tests to run in the UI.
-You will also need to download the chromedriver version that matches your chrome browser's.
+`pip3 install -r requirements.txt`
+
+
+Second, you will also need to download the chromedriver version that matches your current chrome browser's.
 
 https://www.swtestacademy.com/install-chrome-driver-on-mac
 
-You may also need to install requirements.txt:
+To run the tests from the CLI, run this command: 
 
-`pip3 install -r requirements.txt`
+`pytest -v Testcases/CRUD.py`
+
+Or, import the project into an IDE such as Pycharm and edit the run configuration to select Python tests. You can select the test you would like to run based off the script path. 
+
+Example: `/Users/anniwang/PycharmProjects/anni_netflix_project/Testcases/CRUD.py`
+
 
 #### Troubleshooting
 
