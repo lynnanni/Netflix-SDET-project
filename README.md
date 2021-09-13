@@ -23,18 +23,18 @@ This project automates some of the test cases written in Anni-NetflixTestPlan.nu
 
 
 ## Test Setup:
-To run the tests from the CLI: `pytest -v CRUD.py`
+To run the tests from the CLI: `pytest -v Testcases/CRUD.py`
 
 Or, import the project into an IDE such as Pycharm and edit the run configuration to select Python tests. Finally, select the test you would like to run based off the script path. 
 
 Example: `/Users/anniwang/PycharmProjects/anni_netflix_project/Testcases/CRUD.py`
 
-
-To see the tests run in the UI, please install the chromedriver version that matches your chrome browser's.
+NOTE: Please have Chrome installed for tests to run in the UI.
+You will also need to download the chromedriver version that matches your chrome browser's.
 
 https://www.swtestacademy.com/install-chrome-driver-on-mac
 
-Also install requirements.txt:
+You may also need to install requirements.txt:
 
 `pip3 install -r requirements.txt`
 
