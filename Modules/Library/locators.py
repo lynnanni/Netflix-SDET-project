@@ -1,6 +1,7 @@
 class HomePageLocators:
     """
-    All home page locators should be stored here
+    All home page locators should be stored here.
+    Home page = http://computer-database.herokuapp.com/computers
     """
     add_button = "add" #id
     search_box = "searchbox" #id
@@ -17,7 +18,8 @@ class HomePageLocators:
 
 class ComputerPageLocators:
     """
-    Add a new computer page locators stored here
+    Computer page locators stored here (add/edit/delete)
+    Computer page = http://computer-database.herokuapp.com/computers/{ID}
     """
     computer_name = "name" #id
     introduced_date = "introduced" #id
@@ -27,3 +29,4 @@ class ComputerPageLocators:
     cancel_button = "//*[@class='btn' and text()='Cancel']" #xpath
     save_computer_button = "//*[@value='Save this computer']" #xpath
     delete_computer_button = "//*[@value='Delete this computer']" #xpath
+    error_alert = "//*[@class='clearfix error']" #red error xpath
